@@ -104,6 +104,13 @@ dsc.pal <- function(name, direction = 1) {
         "#f4bc5a", # maximum yellow red
         "#6da552", # palm leaf
         "#b53a38"  # pale carmine
+      ),
+      blues = c(
+        "#d7dae0", # gainsboro
+        "#a3aab7", # dark medium gray
+        "#6f7a8e", # slate gray
+        "#474e5b", # outer space
+        "#1f2227"  # dark gunmetal
       )
     )
   if (direction == -1) {
@@ -124,6 +131,7 @@ scale_color_dsc <- function(..., palette = "default", direction = 1) {
       lapply(
         c("dark",
           "light",
+          "blues"
           ),
         palette_function)))
   } else {
@@ -142,7 +150,8 @@ scale_fill_dsc <- function(..., palette = "default", direction = 1) {
     scale_fill_manual(..., values = unlist(
       lapply(
         c("dark",
-          "light"
+          "light",
+          "blues"
           ),
         palette_function)))
   } else {
