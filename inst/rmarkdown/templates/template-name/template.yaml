@@ -1,0 +1,4 @@
+name: DSC Report Template
+description: >
+   Reporting style for the DSC-WAV project
+create_dir: true
