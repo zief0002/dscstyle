@@ -10,6 +10,7 @@ Installing from github: `remotes::install_github("zief0002/dscstyle")`
 
 <br /><br />
 
+
 ## DSC Color Palettes
 
 - The package `{dscstyle}` includes three color palettes that are colorblind friendly and look good with the DSC-WAV logo. These palettes are available in the two ggplot2 scale functions: 
@@ -62,15 +63,19 @@ ggplot(data=iris, aes(x = Sepal.Length, fill = Species)) +
 
 <br /><br />
 
-## Rmarkdown DSC Report Template
+## Rmarkdown DSC Evaluation Report Template
 
-The `{dscstyle}` package also includes a report template to style HTML rendered reports.
+The `{dscstyle}` package also includes a report template to style HTML rendered evaluation reports.
 
 - In RStudio, navigate to `File > New File > R Markdown...`
 - Select `From Template`
-- Select the **DSC Report Template** from the template options
+- Select the **DSC Evaluation Report** from the template options
 - Give the RMD file a name
 - Click `OK`
+
+![RMD Report](man/figures/eval-report.png)
+
+
 
 You may need to install the `{showtext}` package prior to the first time you use this template. This allows the Oswald Google font to be used in the plots.
 
