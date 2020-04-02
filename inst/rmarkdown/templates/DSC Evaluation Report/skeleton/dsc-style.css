@@ -33,9 +33,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-fluid {  /* margin: 0 Left-aligns container; margin: auto to "center" (Default)*/
-  margin-right: auto !important; 
+  margin-right: auto !important;
   margin-left: auto !important;
-} 
+}
 
 
 
@@ -62,7 +62,7 @@ a:hover {
 a:active {
   color: #ef3054;
   text-decoration: underline;
-} 
+}
 
 
 .row-fluid{
@@ -81,13 +81,26 @@ a:active {
   content: "";
   display: block; /*change from block to none for landing page */
   height: 150px;
-  margin: 10px 10px 40px 10px;
+  margin: 10px auto 0 40px; /*top right bottom left */
   background-image: url("img/dsc-wav-medallion-small.png");
   background-size: 120px;
-  background-position: center left;
+  background-position: left center;
   background-repeat: no-repeat;
 }
 
+.nsf {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+}
+
+.nsf-logo {
+  padding: 0 5px 5px 0; /*top right bottom left */
+  vertical-align: middle;
+  width: 45px;
+
+}
 
 div.tocify {
     width: 100% !important;
@@ -99,8 +112,8 @@ div.tocify {
 .tocify {
   border: none;
   position: -webkit-sticky;
-  position: sticky; 
-  top: 60px; 
+  position: sticky;
+  top: 60px;
   width: 100%;
 }
 

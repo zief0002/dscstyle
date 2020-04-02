@@ -2,19 +2,18 @@
 title: "Untitled"
 author: "Chelsey Legacy, Vimal Rao, & Andrew Zieffler"
 output:
-  bookdown::html_document2:
-    toc:
-      collapse: subsection
+  html_document:
+    toc: true
     toc_float:
       collapsed: false
       smooth_scroll: false
-      
     fig_caption: true
     fig_retina: 1
     number_sections: false
     theme: cosmo
     css: dsc-style.css
     includes:
+      before_body: header.html
       after_body: foot.html
 ---
 
