@@ -1,12 +1,15 @@
 Package: dscstyle
 Title: Tools for creating DSC-WAV reports
-Version: 0.0.1.9000
-Authors@R: 
+Version: 0.0.1.9001
+Authors@R: c(
     person(given = "Andrew",
            family = "Zieffler",
            role = c("aut", "cre"),
            email = "zief0002@umn.edu",
-           comment = c(ORCID = "0000-0002-1035-0341"))
+           comment = c(ORCID = "0000-0002-1035-0341")),
+    person("Benjamin S.", "Baumer", email = "ben.baumer@gmail.com",
+      role = c("ctb"))
+    )
 Description: This package includes Rmarkdown and ggplot themes for styling 
     reports for the NSF-funded DSC-WAV project.
 License: GPL-3 + file LICENSE
@@ -18,3 +21,5 @@ Imports:
 Suggests:
     knitr,
     showtext
+URL: http://github.com/DSC-WAV/dscstyle
+BugReports: https://github.com/DSC-WAV/dscstyle/issues
