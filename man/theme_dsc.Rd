@@ -2,9 +2,26 @@
 % Please edit documentation in R/theme_dsc.R
 \name{theme_dsc}
 \alias{theme_dsc}
+\alias{scale_color_dsc}
+\alias{scale_fill_dsc}
 \title{ggplot DSC-WAV theme}
 \usage{
 theme_dsc(size = 12, family = "Oswald")
+
+scale_color_dsc(..., palette = "default", direction = 1)
+
+scale_fill_dsc(..., palette = "default", direction = 1)
+}
+\arguments{
+\item{size}{Font size}
+
+\item{family}{Font family}
+
+\item{...}{arguments passed to \code{\link[ggplot2]{scale_fill_manual}}}
+
+\item{palette}{Color palette}
+
+\item{direction}{1 or 0}
 }
 \description{
 This function is a theme function for use with ggplot2.
@@ -12,4 +29,7 @@ It tries to have a very tight composition, suitable for email or chat message
 }
 \details{
 http://ggplot2.tidyverse.org/reference/theme.html
+}
+\seealso{
+\code{\link[ggplot2]{theme}}
 }

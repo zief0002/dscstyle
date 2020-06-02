@@ -5,6 +5,9 @@
 #'
 #' http://ggplot2.tidyverse.org/reference/theme.html
 #' @import ggplot2
+#' @param size Font size
+#' @param family Font family
+#' @seealso \code{\link[ggplot2]{theme}}
 
 # Notes on primitives: (defaults)
 # element_text:
@@ -120,6 +123,11 @@ dsc.pal <- function(name, direction = 1) {
 }
 
 #' @export
+#' @rdname theme_dsc
+#' @param ... arguments passed to \code{\link[ggplot2]{scale_color_manual}}
+#' @param palette Color palette
+#' @param direction 1 or 0
+#'
 scale_color_dsc <- function(..., palette = "default", direction = 1) {
 
   palette_function <- function(x) {
@@ -140,6 +148,8 @@ scale_color_dsc <- function(..., palette = "default", direction = 1) {
 }
 
 #' @export
+#' @rdname theme_dsc
+#' @param ... arguments passed to \code{\link[ggplot2]{scale_fill_manual}}
 scale_fill_dsc <- function(..., palette = "default", direction = 1) {
 
   palette_function <- function(x) {
