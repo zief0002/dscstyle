@@ -20,13 +20,12 @@ output:
 ```{r echo=FALSE, message=FALSE}
 # Load libraries
 library(showtext)  #Needed to use the Oswald font in the plots
-library(tidyverse)
+library(ggplot2)
 library(dscstyle)
 library(knitr)
 
 # Load the Oswald font
 font_add_google("Oswald", "Oswald")
-
 
 ## Global chunk options
 opts_chunk$set(
@@ -65,7 +64,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dui diam, ultric
 <!-- Note that the chunk option fig.showtext=TRUE needs to be set to have the text render correctly in the plot. -->
 
 ```{r fig.showtext=TRUE, message=FALSE, out.width="60%"}
-ggplot(data=iris, aes(x = Sepal.Length, fill = Species)) + 
+ggplot(data = iris, aes(x = Sepal.Length, fill = Species)) + 
   geom_histogram() + 
   theme_dsc() + 
   scale_fill_dsc()
